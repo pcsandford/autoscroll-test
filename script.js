@@ -17,13 +17,12 @@ $(document).ready(function(){
           "speed": "medium",
           "pause": 5,
           "click": true,
-          "minimumMovement": 10
+          "minimumMovement": 5
         });
   },500);
 
   function play() {
     var $scroll = _getScrollEl();
-
     if ($scroll) {
       console.log('play');
       $scroll.play();
