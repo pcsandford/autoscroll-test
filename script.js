@@ -14,17 +14,16 @@ $(document).ready(function(){
   setTimeout(function(){
     $scrollContainer.autoScroll({
           "by": "continuous",
-          "speed": "medium",
+          "speed": "slow",
           "pause": 5,
-          "click": true,
-          "minimumMovement": 5
+          "click": false,
+          "minimumMovement": 0
         });
   },500);
 
   function play() {
     var $scroll = _getScrollEl();
     if ($scroll) {
-      console.log('play');
       $scroll.play();
     }
   }
